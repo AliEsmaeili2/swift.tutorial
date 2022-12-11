@@ -1,5 +1,6 @@
+
+//https://www.youtube.com/watch?v=CwA1VWP0Ldw
 import UIKit
-import MapKit
 
 //.............................................................Variable
 
@@ -96,8 +97,79 @@ print("hello iran")
 
 }
 test1()
+//call function and print 'X';
 
-var weree = 6
+func test2(name: String){
+    
+    print(name)
+}
+test2(name: "specialized")
+//call Function by define variable and print 'X'
+
+func addTest(firstNumber: Int, secondNumber: Int) -> Int {
+    
+    let sum = firstNumber + secondNumber;
+    return sum
+    
+}
+print(addTest(firstNumber: 45, secondNumber: 50))
+//call and print funtion : defined 2 variable's of Int and the Output of this funtions is Int type.
+
+//......................................................................If/else
+
+//if this then that
+
+var cheking = true
+
+if (cheking == true) {
+    
+    print("value of this Var is True")
+}
+//........
+
+var cheking1 = false
+
+if cheking1 {
+    
+    print("value of this Var is True")
+    
+} else {
+    
+    print("value of this Var is False")
+}
+//another way
+
+var myScore = 20
+var yourScore = 15
+
+if myScore > yourScore {
+    
+    print("I win")
+    
+} else {
+    
+    print("U win")
+}
+//check lower or higher Score
+
+var myScore1 = 9
+
+if myScore1 > 18 {
+    
+    print("Best")
+    
+} else if myScore1 > 10 {
+    
+    print("good")
+} else {
+    
+    print("noob")
+}
+
+//..............................................................for Loop
+
+
+ 
 
 
 
