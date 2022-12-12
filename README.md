@@ -1,10 +1,10 @@
-this is a learning Swift Language
+ Swift Programming Language Tutorial | Beginner
 
-learn ...
+Chapters ...
 
 Var (varible)
 
-array
+Array
 
 Set
 
