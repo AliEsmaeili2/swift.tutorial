@@ -168,27 +168,43 @@ if myScore1 > 18 {
 
 //..............................................................for Loop
 
+let allStars = ["ali", "hasan", "ferry", "terry"]
+
+for players in allStars {
+    
+    print(players)
+}
+ //
+
+let allStars1 = ["ali", "hasan", "ferry", "terry"]
+
+for players1 in allStars1 where players1 == "hasan" {
+    
+    print(players1)
+}
+//when find "X" print it
+
+for i in 1...20 {
+    
+    print(i)
+}
+// for on range 1,2,3...,20 print it
+
+var randomInts: [Int] = []
+
+for _ in 0...15 {
+    
+    let randomNumber = Int.random(in: 1...100)
+    randomInts.append(randomNumber)
+    
+}
+    print(randomInts)
+// for for random numbers and print 15times numbers of range 1...100
+
+//........................................................................ENUM
+
 
 
 
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
