@@ -203,7 +203,81 @@ for _ in 0...15 {
 
 //........................................................................ENUM
 
+enum Phone {
+    
+    case Apple
+    case Nokia
+    case Samsung
+    case Xiaomi
+}
 
+func phoneTypes (on phone1: Phone) {
+    
+    if phone1 == .Samsung {
+
+        print("Android phone")
+        
+    } else if phone1 == .Nokia {
+        
+        print("Strong phone")
+        
+    } else if phone1 == .Apple {
+        
+    print("Great phone")
+        
+    } else {
+        
+    print("bad phone")
+    }
+}
+
+phoneTypes(on: .Apple)
+phoneTypes(on: .Nokia)
+
+//......................................
+
+enum Phone2: String {
+    
+    case Apple = "Great phone"
+    case Nokia = "Strong phone"
+    case Samsung = "Android phone"
+    case Xiaomi = "Bad phone"
+}
+
+func phoneTypes1 (on phone3: Phone2) {
+    
+    print(phone3.rawValue)
+}
+
+phoneTypes1(on: .Samsung)
+phoneTypes1(on: .Xiaomi)
+
+//
+//..................................................Switch
+
+let Score11 = 555
+
+func scoreLeague (from rank: Int) {
+    
+    
+    switch rank {
+        
+    case 0: print("you dont have any ranks")
+        
+    case 50..<100: print("you are in BRONZE League")
+        
+    case 100..<200: print("you are in SILVER League")
+        
+    case 200..<300: print("you are in GOLD League")
+        
+    default: print("we don't know where are U...!?")
+    }
+}
+
+print (scoreLeague(from: Score11))
+//switch
+
+//.............................................................Operators
 
 
 

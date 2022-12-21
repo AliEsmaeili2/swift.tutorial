@@ -1,18 +1,22 @@
- Swift Programming Language Tutorial | Beginner
+ Swift Programming Language Tutorial | lvl:Beginner
 
 Chapters ...
 
-Var (varible)
+1-Var (varible)
 
-Array
+2-Array
 
-Set
+3-Set
 
-Dictionary
+4-Dictionary
 
-Functions
+5-Functions
 
-if/ else
+6-if/ else
 
-For (loop)
+7-For (loop)
+
+8-ENUM
+
+9-Switch
 
