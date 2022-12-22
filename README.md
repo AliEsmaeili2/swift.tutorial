@@ -1,4 +1,4 @@
- Swift Programming Language Tutorial | lvl:Beginner
+ SWIFT Programming Language Tutorial | lvl: Beginner
 
 Chapters ...
 
@@ -20,5 +20,11 @@ Chapters ...
 
 9-Switch
 
-10-Optionals
+10-Operators
+
+11-Optionals
+
+//Self
+
+12-Class
 

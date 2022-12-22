@@ -330,5 +330,90 @@ print(agesYoung + agesOld)
 
 //.............................................................Optionals
 
+var ages1 = [231, 23, 345, 35 ,657 ,65, 224, 465]
+ages1.sort()
+ 
+var oldAges1 = ages1.last
+//print(oldAges1)
 
+let ages2: [Int] = []
+//let oldAges2 = ages2.last
+//print(oldAges2)
+
+if let oldAges2 = ages2.last{
+    
+    print("the oldest ages is \(oldAges2)")
+}else {
+    
+    print("there is no oldest ages")
+}
+
+//guard Statement
+
+func getOldAges1() {
+    
+    guard let oldAges3 = ages1.last else {
+        return
+    }
+    
+    print("\(oldAges3) is the oldest age")
+    //code ...
+}
+
+getOldAges1();
+
+//.............................................................Class
+
+class Developer {
+    
+    var name1: String
+    var job1: String
+    var yearsExp: Int
+    
+    init(name1: String, job1: String, yearsExp: Int){
+        
+        self.name1    = name1
+        self.job1     = job1
+        self.yearsExp = yearsExp
+    }
+    
+    //codes...
+    /*
+    func callName() {
+        
+        print(name1)
+    }
+     */
+}
+
+let ali = Developer (name1: "ALI", job1: "IOS_Developer", yearsExp: 1)
+
+ali.name1
+ali.job1
+ali.yearsExp
+
+print(ali.name1,ali.job1,ali.yearsExp)
+    //ali.callName()
+
+class Developer1 {
+    
+    var name2: String?
+    var job2: String?
+    var yearsExp1: Int?
+    
+    init(){
+        
+    }
+    //codes...
+}
+
+let esmaeili = Developer1()
+
+esmaeili.name2 = "haj Ali"
+esmaeili.job2  = "Coder"
+esmaeili.yearsExp1 = 3
+
+//print(esmaeili.name2)
+
+//.............................................
 
