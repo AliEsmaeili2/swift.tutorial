@@ -279,6 +279,56 @@ print (scoreLeague(from: Score11))
 
 //.............................................................Operators
 
+let value1 = 55
+let value2 = 88
+
+let value3: Double = 55
+let value4: Double = 88
+
+let sum1 = value1 + value2
+print(sum1)
+
+let sum2 = value1 - value2
+print(sum2)
+
+let sum3 = value1 * value2
+print(sum3)
+
+let sum4 = value3 / value4
+print(sum4)
+
+let sum5 = value1 % value2
+print(sum5)
+
+value1 == value2
+//false
+
+value1 != value2
+//True (Bang operator)
+
+var isDarkModeOn = false
+
+if !isDarkModeOn {
+    
+    print("Dark mode OFF")
+}
+
+if value1 == value2 || !isDarkModeOn {
+    
+    print("both value equal and dark mode OFF")
+}
+
+var firstS1 = "Hi"
+var firstS2 = "Swift"
+
+print(firstS1 + " " + firstS2)
+
+var agesYoung = [22, 44, 55]
+var agesOld = [77, 88]
+
+print(agesYoung + agesOld)
+
+//.............................................................Optionals
 
 
- 
+
