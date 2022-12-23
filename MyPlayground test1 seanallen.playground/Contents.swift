@@ -1,8 +1,9 @@
 
 //https://www.youtube.com/watch?v=CwA1VWP0Ldw
 import UIKit
+import Foundation
 
-//.............................................................Variable
+//...............................................................Variable
 
 var greeting = "Hello, playground"
 //string
@@ -16,7 +17,7 @@ var b = 5.3
 let c = 3
 //stable
 
-//..............................................................Arry
+//..................................................................Arry
 
 var ages = [23, 24, 45, 22, 66, 24]
 //arry
@@ -54,7 +55,7 @@ ages.shuffle()
 print(ages)
 // random
 
-//...............................................................set
+//....................................................................Set
 
 var agesSet = Set(ages)
 print(agesSet)
@@ -72,7 +73,7 @@ agesSet.insert(88)
 agesSet.contains(88)
 print(agesSet)
 
-//........................................................dictionary
+//.............................................................dictionary
 
 let devices : [String : String] = [
      
@@ -89,7 +90,7 @@ devices["watch"]
 print(devices)
 
 
-//........................................................Functions
+//.............................................................Functions
 
 func test1() {
     
@@ -166,7 +167,7 @@ if myScore1 > 18 {
     print("noob")
 }
 
-//..............................................................for Loop
+//...................................................................for Loop
 
 let allStars = ["ali", "hasan", "ferry", "terry"]
 
@@ -253,7 +254,7 @@ phoneTypes1(on: .Samsung)
 phoneTypes1(on: .Xiaomi)
 
 //
-//..................................................Switch
+//............................................................Switch
 
 let Score11 = 555
 
@@ -277,7 +278,7 @@ func scoreLeague (from rank: Int) {
 print (scoreLeague(from: Score11))
 //switch
 
-//.............................................................Operators
+//.......................................................................Operators
 
 let value1 = 55
 let value2 = 88
@@ -328,7 +329,7 @@ var agesOld = [77, 88]
 
 print(agesYoung + agesOld)
 
-//.............................................................Optionals
+//.......................................................................Optionals
 
 var ages1 = [231, 23, 345, 35 ,657 ,65, 224, 465]
 ages1.sort()
@@ -362,7 +363,7 @@ func getOldAges1() {
 
 getOldAges1();
 
-//.............................................................Class
+//.......................................................................Class
 
 class Developer {
     
@@ -378,12 +379,12 @@ class Developer {
     }
     
     //codes...
-    /*
+    
     func callName() {
         
         print(name1)
     }
-     */
+     
 }
 
 let ali = Developer (name1: "ALI", job1: "IOS_Developer", yearsExp: 1)
@@ -415,5 +416,71 @@ esmaeili.yearsExp1 = 3
 
 //print(esmaeili.name2)
 
-//.............................................
+//...................................................................Inheritance
 
+
+class IOSDeveloper: Developer {
+    
+    var favoriteFramework : String?
+    
+    func callFavoriteFramework() {
+        
+        if let favoriteFramework = favoriteFramework {
+            
+            print(favoriteFramework)
+        
+        } else {
+            print("NO favorite Framework")
+        }
+    }
+    
+    override func callName() {
+        
+        print("\(name1) - \(job1)")
+    }
+}
+
+let ali3 = IOSDeveloper(name1: "ALI", job1: "IOS_Developer", yearsExp: 1)
+
+
+ali3.favoriteFramework = "UIKit"
+
+ali3.callFavoriteFramework()
+
+ali3.callName()
+//print(ali3.callName())
+
+//......................................................................Struct
+
+struct Developer3 {
+    //memberWise initializer
+    
+    var name3: String
+    var job3: String
+    var yearsExp3: Int
+    
+}
+
+var ali4 = Developer3(name3: "ferry", job3: "carry", yearsExp3: 3)
+
+var joe = ali4
+
+joe.name3 = "hasan"
+
+ali4.name3
+
+//..................................................................Extention
+
+extension String {
+    
+    func remove1() -> String {
+        
+        //function of remove white Spaces
+        return components(separatedBy: .whitespaces).joined()
+    }
+}
+
+let alphabet = "A B C D"
+print(alphabet.remove1())
+
+//.........................................................

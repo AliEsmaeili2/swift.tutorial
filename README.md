@@ -28,3 +28,7 @@ Chapters ...
 
 12-Class
 
+13-Inheritance
+
+14-Struct
+
