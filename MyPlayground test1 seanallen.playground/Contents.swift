@@ -483,4 +483,38 @@ extension String {
 let alphabet = "A B C D"
 print(alphabet.remove1())
 
-//.........................................................
+//.............................................................FIZZBUZZ
+
+// for numbers divisible by 3, print "FIZZ"
+// for numbers divisible by 5, print "BUZZ"
+// for numbers divisible by 3 & 5 (like the number 15), print "FIZZBUZZ!"
+
+func RunFizzBuzz() {
+    
+    for i in 1...100 {
+    
+        if (i % 3 == 0 && i % 5 == 0) {
+            
+        print("FIZZBUZZ! \(i)")
+            
+        }
+        else if (i % 3 == 0){
+            
+            print("FIZZ! \(i)")
+            
+        }
+        else if (i % 5 == 0) {
+            
+            print("BUZZ! \(i)")
+            
+        }
+        else {
+        
+            print(i)
+            
+            }
+        }
+    }
+
+RunFizzBuzz()
+
