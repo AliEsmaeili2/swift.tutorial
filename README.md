@@ -1,52 +1,55 @@
- SWIFT Programming Language Tutorial | lvl: Beginner
+	SWIFT Programming Language Tutorial | lvl: Beginner
 
-Chapters ...
+ www.youtube.com/watch?v=CwA1VWP0Ldw
 
-1-Var (varible)
+ Chapters ...
 
-2-Array
+1- Var (varible)
 
-3-Set
+2- Array
 
-4-Dictionary
+3- Set
 
-5-Functions
+4- Dictionary
 
-6-if/ else
+5- Functions
 
-7-For (loop)
+6- if/ else
 
-8-ENUM
+7- For (loop)
 
-9-Switch
+8- Enum
 
-10-Operators
+9- Switch
 
-11-Optionals
+10- Operators
+
+11- Optionals
 
 //Self
 
-12-Class
+12- Class
 
-13-Inheritance
+13- Inheritance
 
-14-Struct
+14- Struct
 
-15-2-FIZZBUZZ!
+15-2- FIZZBUZZ!
 
 ---------------------------------------------
 
 //Auto Layout
 
-15-1-UIkit
+15-1- UIkit
 
-Colors APP {
+Colors App {
 
-16-Intro
+16- Intro
 
-17-Navigation
+17- Navigation
 
-18-UITableView
+18- UITableView
 
+19- Logic(Code)
 
 }
