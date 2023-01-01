@@ -1,9 +1,4 @@
-//
-//  SceneDelegate.swift
-//  CardWorkout
-//
-//  Created by Ali esmaeili on 12/31/22.
-//
+
 
 import UIKit
 
