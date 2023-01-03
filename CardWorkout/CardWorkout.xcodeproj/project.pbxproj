@@ -13,6 +13,7 @@
 		13722DE52960421100C56887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13722DE42960421100C56887 /* Assets.xcassets */; };
 		13722DE82960421100C56887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13722DE62960421100C56887 /* LaunchScreen.storyboard */; };
 		13722DF0296042AA00C56887 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13722DEF296042AA00C56887 /* CardSelectionVC.swift */; };
+		13AD63752964A09C00D737BA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AD63742964A09C00D737BA /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		13722DE72960421100C56887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13722DE92960421100C56887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13722DEF296042AA00C56887 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		13AD63742964A09C00D737BA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				13722DDB2960420F00C56887 /* AppDelegate.swift */,
 				13722DDD2960420F00C56887 /* SceneDelegate.swift */,
 				13722DEF296042AA00C56887 /* CardSelectionVC.swift */,
+				13AD63742964A09C00D737BA /* Card.swift */,
 				13722DE12960420F00C56887 /* Main.storyboard */,
 				13722DE42960421100C56887 /* Assets.xcassets */,
 				13722DE62960421100C56887 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				13722DDC2960420F00C56887 /* AppDelegate.swift in Sources */,
 				13722DDE2960420F00C56887 /* SceneDelegate.swift in Sources */,
 				13722DF0296042AA00C56887 /* CardSelectionVC.swift in Sources */,
+				13AD63752964A09C00D737BA /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

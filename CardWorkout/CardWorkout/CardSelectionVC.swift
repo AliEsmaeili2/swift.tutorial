@@ -12,28 +12,55 @@ class CardSelectionVC: UIViewController {
     @IBOutlet var Buttons: [UIButton]!
     //for STOP
     
+    var cards: [UIImage] = Card.allValues
+    
+    var timer: Timer!
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
+        startTimer()
+        
         for button1 in Buttons {
-            //can be button
             
             button1.layer.cornerRadius = 8
         }
-        
-       // StopButton.layer.cornerRadius      = 8
-       // RestartButton.layer.cornerRadius    = 8
-       // RulesButton.layer.cornerRadius      = 8
     }
     
-    @IBAction func StopButtonTapped(_ sender: UIButton) {
-       // StopButton.setTitle("I've been tapped", for: .normal)
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        timer.invalidate()
     }
+
+    
+    func startTimer() {
+        
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(showRandomImage), userInfo: nil, repeats: true)
+    }
+    
+    
+    @objc func showRandomImage () {
+                
+        CardImageView.image = cards.randomElement() ?? UIImage(named: "AS")
+    }
+    
+    
+    @IBAction func StopButtonTapped(_ sender: UIButton) {
+        
+        timer.invalidate()
+    }
+    
     
     @IBAction func RestartButtonTapped(_ sender: UIButton) {
         
+        timer.invalidate()
+        startTimer()
     }
+    
     
     @IBAction func RulesButtonTapped(_ sender: UIButton) {
         
