@@ -5,11 +5,7 @@ class CardSelectionVC: UIViewController {
 
     @IBOutlet var CardImageView: UIImageView!
     
-   // @IBOutlet var StopButton: UIButton!
-   // @IBOutlet var RestartButton: UIButton!
-   // @IBOutlet var RulesButton: UIButton!
-    
-    @IBOutlet var Buttons: [UIButton]!
+   // @IBOutlet var Buttons: [UIButton]!
     //for STOP
     
     var cards: [UIImage] = Card.allValues
@@ -23,10 +19,10 @@ class CardSelectionVC: UIViewController {
         
         startTimer()
         
-        for button1 in Buttons {
+      //  for button1 in Buttons {
             
-            button1.layer.cornerRadius = 8
-        }
+       //     button1.layer.cornerRadius = 8
+      //  }
     }
     
     override func viewWillAppear(_ animated: Bool) {
