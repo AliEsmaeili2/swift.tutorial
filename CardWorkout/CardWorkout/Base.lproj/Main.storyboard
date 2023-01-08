@@ -24,9 +24,9 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgG-Vy-yxF">
-                                <rect key="frame" x="77" y="598" width="260" height="50"/>
+                                <rect key="frame" x="74.5" y="598" width="265" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="pk0-1D-Wrf"/>
+                                    <constraint firstAttribute="width" constant="265" id="pk0-1D-Wrf"/>
                                     <constraint firstAttribute="height" constant="50" id="s2o-v6-yqB"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -40,14 +40,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzz-Ae-XGM">
-                                <rect key="frame" x="77" y="668" width="115" height="50"/>
+                                <rect key="frame" x="74.5" y="668" width="130" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="h8e-Cg-3nw"/>
-                                    <constraint firstAttribute="width" constant="115" id="tnC-Q3-dbo"/>
+                                    <constraint firstAttribute="width" constant="130" id="tnC-Q3-dbo"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" image="arrow.clockwise" catalog="system" title="RESTART" imagePadding="0.0" cornerStyle="medium">
+                                <buttonConfiguration key="configuration" style="tinted" image="arrow.clockwise" catalog="system" title="RESTART" imagePadding="-1" cornerStyle="medium">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle3"/>
                                     <color key="baseForegroundColor" systemColor="systemGreenColor"/>
                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
@@ -57,10 +57,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKg-NO-0Ii">
-                                <rect key="frame" x="222" y="668" width="115" height="50"/>
+                                <rect key="frame" x="209.5" y="668" width="130" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1mg-TF-uo0"/>
-                                    <constraint firstAttribute="width" constant="115" id="yau-19-0Km"/>
+                                    <constraint firstAttribute="width" constant="130" id="yau-19-0Km"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="list.bullet.rectangle.portrait" catalog="system" title="RULES" imagePadding="2" cornerStyle="medium">
