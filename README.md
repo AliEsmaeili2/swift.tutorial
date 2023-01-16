@@ -77,4 +77,6 @@ CardWorkout App {
 
 26- Card Selection
 
+27- Rules Screen
+
 }

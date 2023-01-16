@@ -74,6 +74,8 @@ class CardSelectionVC: UIViewController {
         
         view.addSubview(rulesButton)
         
+       // rulesButton.addTarget(self, action: <#T##Selector#>, for: <#T##UIControl.Event#>)
+        
         NSLayoutConstraint.activate([
         
             rulesButton.widthAnchor.constraint(equalToConstant: 115),
