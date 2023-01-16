@@ -79,4 +79,6 @@ CardWorkout App {
 
 27- Rules Screen
 
+28- Logic
+
 }
