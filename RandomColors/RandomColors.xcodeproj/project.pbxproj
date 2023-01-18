@@ -13,9 +13,6 @@
 		13BA90F12959C38D00C37E9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BA90EF2959C38D00C37E9A /* Main.storyboard */; };
 		13BA90F32959C39200C37E9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BA90F22959C39200C37E9A /* Assets.xcassets */; };
 		13BA90F62959C39200C37E9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BA90F42959C39200C37E9A /* LaunchScreen.storyboard */; };
-		13BA91012959C39300C37E9A /* RandomColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA91002959C39300C37E9A /* RandomColorsTests.swift */; };
-		13BA910B2959C39300C37E9A /* RandomColorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA910A2959C39300C37E9A /* RandomColorsUITests.swift */; };
-		13BA910D2959C39300C37E9A /* RandomColorsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA910C2959C39300C37E9A /* RandomColorsUITestsLaunchTests.swift */; };
 		13BA911C2959C79100C37E9A /* ColorsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA911B2959C79100C37E9A /* ColorsTableVC.swift */; };
 		13BA911E2959CA1E00C37E9A /* ColorsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BA911D2959CA1E00C37E9A /* ColorsDetailVC.swift */; };
 /* End PBXBuildFile section */
@@ -47,10 +44,7 @@
 		13BA90F52959C39200C37E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13BA90F72959C39200C37E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13BA90FC2959C39300C37E9A /* RandomColorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomColorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		13BA91002959C39300C37E9A /* RandomColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsTests.swift; sourceTree = "<group>"; };
 		13BA91062959C39300C37E9A /* RandomColorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomColorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		13BA910A2959C39300C37E9A /* RandomColorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsUITests.swift; sourceTree = "<group>"; };
-		13BA910C2959C39300C37E9A /* RandomColorsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		13BA911B2959C79100C37E9A /* ColorsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableVC.swift; sourceTree = "<group>"; };
 		13BA911D2959CA1E00C37E9A /* ColorsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				13BA90E82959C38D00C37E9A /* RandomColors */,
-				13BA90FF2959C39300C37E9A /* RandomColorsTests */,
-				13BA91092959C39300C37E9A /* RandomColorsUITests */,
 				13BA90E72959C38D00C37E9A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,23 +106,6 @@
 				13BA90F72959C39200C37E9A /* Info.plist */,
 			);
 			path = RandomColors;
-			sourceTree = "<group>";
-		};
-		13BA90FF2959C39300C37E9A /* RandomColorsTests */ = {
-			isa = PBXGroup;
-			children = (
-				13BA91002959C39300C37E9A /* RandomColorsTests.swift */,
-			);
-			path = RandomColorsTests;
-			sourceTree = "<group>";
-		};
-		13BA91092959C39300C37E9A /* RandomColorsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				13BA910A2959C39300C37E9A /* RandomColorsUITests.swift */,
-				13BA910C2959C39300C37E9A /* RandomColorsUITestsLaunchTests.swift */,
-			);
-			path = RandomColorsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13BA91012959C39300C37E9A /* RandomColorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13BA910B2959C39300C37E9A /* RandomColorsUITests.swift in Sources */,
-				13BA910D2959C39300C37E9A /* RandomColorsUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
