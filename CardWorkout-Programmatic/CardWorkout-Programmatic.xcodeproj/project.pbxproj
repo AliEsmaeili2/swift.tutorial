@@ -13,6 +13,7 @@
 		13064496296EB02D0028426F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13064494296EB02D0028426F /* LaunchScreen.storyboard */; };
 		1306449E296EB41B0028426F /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306449D296EB41B0028426F /* CardSelectionVC.swift */; };
 		134FB9B2297088CD00D4B373 /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FB9B1297088CD00D4B373 /* CWButton.swift */; };
+		13672CC32977DF12004E6A64 /* File-info in Resources */ = {isa = PBXBuildFile; fileRef = 13672CC22977DF12004E6A64 /* File-info */; };
 		13D555AE2975C0BC00B184BD /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D555AD2975C0BC00B184BD /* RulesVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		13064497296EB02D0028426F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1306449D296EB41B0028426F /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
 		134FB9B1297088CD00D4B373 /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
+		13672CC22977DF12004E6A64 /* File-info */ = {isa = PBXFileReference; lastKnownFileType = text; path = "File-info"; sourceTree = "<group>"; };
 		13D555AD2975C0BC00B184BD /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				13064492296EB02D0028426F /* Assets.xcassets */,
 				13064494296EB02D0028426F /* LaunchScreen.storyboard */,
 				13064497296EB02D0028426F /* Info.plist */,
+				13672CC22977DF12004E6A64 /* File-info */,
 			);
 			path = "CardWorkout-Programmatic";
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13064496296EB02D0028426F /* LaunchScreen.storyboard in Resources */,
+				13672CC32977DF12004E6A64 /* File-info in Resources */,
 				13064493296EB02D0028426F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

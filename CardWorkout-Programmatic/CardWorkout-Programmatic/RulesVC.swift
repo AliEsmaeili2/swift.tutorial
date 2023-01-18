@@ -1,5 +1,4 @@
-
-
+//
 import UIKit
 
 class RulesVC: UIViewController {
@@ -7,9 +6,9 @@ class RulesVC: UIViewController {
     let titleLabel    = UILabel()
     let rulesLabel    = UILabel()
     let exerciseLabel  = UILabel()
-    
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         view.backgroundColor = .systemBackground
@@ -23,8 +22,14 @@ class RulesVC: UIViewController {
    func configureTitleLabel() {
     
        view.addSubview(titleLabel)
+       
        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+       
+       /*What is the use of translatesAutoresizingMaskIntoConstraints?
+        translatesAutoresizingMaskIntoConstraints. A Boolean value that determines whether the view's autoresizing mask is translated into Auto Layout constraints.*/
+       
        titleLabel.text = "Rules"
+       
        titleLabel.font = .systemFont(ofSize: 40, weight: .bold)
        titleLabel.textAlignment = .center
        
@@ -37,7 +42,6 @@ class RulesVC: UIViewController {
 
        ])
     }
-    
     //rulesLabel
     func configureRulesLabel() {
         
@@ -58,15 +62,13 @@ class RulesVC: UIViewController {
             rulesLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30)
 
         ])
-         
     }
-    
     //exerciseLabel
     func configureExerciseLabel() {
         
         view.addSubview(exerciseLabel)
         exerciseLabel.translatesAutoresizingMaskIntoConstraints = false
-        exerciseLabel.text = "♠️ = Push-ups\n\n ♥️ = Sit-up\n\n ♣️ = Burpees\n\n ♦️ = Jumping Jacks"
+        exerciseLabel.text = " ♠️ = Push-ups\n\n ♥️ = Sit-up\n\n ♣️ = Burpees\n\n ♦️ = Jumping Jacks "
         
         exerciseLabel.font = .systemFont(ofSize: 20, weight: .semibold)
        // exerciseLabel.textAlignment = .center
@@ -80,8 +82,5 @@ class RulesVC: UIViewController {
             exerciseLabel.widthAnchor.constraint(equalToConstant: 200),
             exerciseLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
-         
     }
-    
-
 }
