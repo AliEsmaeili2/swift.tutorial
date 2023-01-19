@@ -4,9 +4,10 @@ import UIKit
 class CardSelectionVC: UIViewController {
     
     let cardImageView = UIImageView()
-    let stopButton  = CWButton(backgroundColor: .systemRed, title: "STOP!")
-    let resetButton = CWButton(backgroundColor: .systemGreen, title: "RESET")
-    let rulesButton = CWButton(backgroundColor: .systemBlue, title: "RULES")
+    
+    let stopButton  = CWButton(color: .systemRed, title: "STOP!", systemImageName: "stop.circle")
+    let resetButton = CWButton(color: .systemGreen, title: "RESET", systemImageName: "arrow.clockwise.circle")
+    let rulesButton = CWButton(color: .systemBlue, title: "RULES", systemImageName: "list.bullet")
     
     //cardDeck file
     //var cards : [UIImage] = CardDeck.allValues
@@ -16,6 +17,7 @@ class CardSelectionVC: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         view.backgroundColor = .systemBackground
         
         configureUI()
@@ -34,8 +36,9 @@ class CardSelectionVC: UIViewController {
     }
     
     @objc func resetTimer(){
-        
+    
         stopTimer()
+        
         startTimer()
         
     }
@@ -57,6 +60,7 @@ class CardSelectionVC: UIViewController {
     func configureCardImageView() {
         
         view.addSubview(cardImageView)
+        
         cardImageView.translatesAutoresizingMaskIntoConstraints = false
         cardImageView.image = UIImage(named: "QD")
         
@@ -76,6 +80,7 @@ class CardSelectionVC: UIViewController {
         
         stopButton.addTarget(self , action: #selector(stopTimer), for: .touchUpInside)
         
+        
         NSLayoutConstraint.activate([
         
             stopButton.widthAnchor.constraint(equalToConstant: 260),
@@ -92,6 +97,7 @@ class CardSelectionVC: UIViewController {
         
         resetButton.addTarget(self, action: #selector(resetTimer), for: .touchUpInside)
         
+        
         NSLayoutConstraint.activate([
         
             resetButton.widthAnchor.constraint(equalToConstant: 115),
@@ -107,6 +113,7 @@ class CardSelectionVC: UIViewController {
         view.addSubview(rulesButton)
         
         rulesButton.addTarget(self, action: #selector(presentRulesVC), for: .touchUpInside)
+        
         
         NSLayoutConstraint.activate([
         

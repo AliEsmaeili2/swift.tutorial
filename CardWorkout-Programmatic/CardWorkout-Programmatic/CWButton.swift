@@ -7,7 +7,7 @@ class CWButton: UIButton {
         
         super.init(frame: frame)
         
-            configure()
+           // configure()
     }
     
     required init?(coder: NSCoder) {
@@ -15,26 +15,36 @@ class CWButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
   
-    init(backgroundColor: UIColor, title: String){
+    init(color: UIColor, title: String, systemImageName: String){
 
         super.init(frame: .zero )
         
-        self.backgroundColor = backgroundColor
+        configuration = .tinted()
+        configuration?.title             = title
+        configuration?.baseForegroundColor = color
+        configuration?.baseBackgroundColor = color
+        configuration?.cornerStyle        = .medium
         
-        setTitle(title, for: .normal)
+        configuration?.image = UIImage(systemName: systemImageName)
         
-        configure()
-    }
-    
-    func configure() {
+        configuration?.imagePadding = 5
+        configuration?.imagePlacement = .trailing
         
-        layer.cornerRadius = 8
-        
-        titleLabel?.font = .systemFont(ofSize: 19, weight: .bold)
-        
-        setTitleColor(.white, for: .normal)
         
         translatesAutoresizingMaskIntoConstraints = false
+
+       // self.backgroundColor = backgroundColor
+       // setTitle(title, for: .normal)
+       // configure()
+        
+
     }
+    
+    //func configure() {
+       // layer.cornerRadius = 8
+      //  titleLabel?.font = .systemFont(ofSize: 19, weight: .bold)
+      //  setTitleColor(.white, for: .normal)
+      //  translatesAutoresizingMaskIntoConstraints = false
+   // }
 
 }
