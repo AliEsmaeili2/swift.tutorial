@@ -41,6 +41,8 @@
 
 15-2- FIZZBUZZ!
 
+31- Filter, Map, Reduce
+
 ---------------------------------------------
 
 	.XcodeProject

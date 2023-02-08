@@ -1,9 +1,9 @@
+// - MARK: https://www.youtube.com/watch?v=CwA1VWP0Ldw
 
-//https://www.youtube.com/watch?v=CwA1VWP0Ldw
 import UIKit
 import Foundation
 
-//...............................................................Variable
+// - MARK: Variable
 
 var greeting = "Hello, playground"
 //string
@@ -17,7 +17,7 @@ var b = 5.3
 let c = 3
 //stable
 
-//..................................................................Arry
+// - MARK: Array
 
 var ages = [23, 24, 45, 22, 66, 24]
 //arry
@@ -55,7 +55,7 @@ ages.shuffle()
 print(ages)
 // random
 
-//....................................................................Set
+// - MARK: Set
 
 var agesSet = Set(ages)
 print(agesSet)
@@ -73,7 +73,7 @@ agesSet.insert(88)
 agesSet.contains(88)
 print(agesSet)
 
-//.............................................................dictionary
+// - MARK: dictionary
 
 let devices : [String : String] = [
      
@@ -90,7 +90,7 @@ devices["watch"]
 print(devices)
 
 
-//.............................................................Functions
+// - MARK: Functions
 
 func test1() {
     
@@ -116,7 +116,7 @@ func addTest(firstNumber: Int, secondNumber: Int) -> Int {
 print(addTest(firstNumber: 45, secondNumber: 50))
 //call and print funtion : defined 2 variable's of Int and the Output of this funtions is Int type.
 
-//......................................................................If/else
+// - MARK: If/else
 
 //if this then that
 
@@ -167,7 +167,7 @@ if myScore1 > 18 {
     print("noob")
 }
 
-//...................................................................for Loop
+// - MARK: for Loop
 
 let allStars = ["ali", "hasan", "ferry", "terry"]
 
@@ -202,7 +202,7 @@ for _ in 0...15 {
     print(randomInts)
 // for for random numbers and print 15times numbers of range 1...100
 
-//........................................................................ENUM
+// - MARK: ENUM
 
 enum Phone {
     
@@ -254,7 +254,7 @@ phoneTypes1(on: .Samsung)
 phoneTypes1(on: .Xiaomi)
 
 //
-//............................................................Switch
+// - MARK: Switch
 
 let Score11 = 555
 
@@ -278,7 +278,7 @@ func scoreLeague (from rank: Int) {
 print (scoreLeague(from: Score11))
 //switch
 
-//.......................................................................Operators
+// - MARK: Operators
 
 let value1 = 55
 let value2 = 88
@@ -329,7 +329,7 @@ var agesOld = [77, 88]
 
 print(agesYoung + agesOld)
 
-//.......................................................................Optionals
+// - MARK: Optionals
 
 var ages1 = [231, 23, 345, 35 ,657 ,65, 224, 465]
 ages1.sort()
@@ -363,7 +363,7 @@ func getOldAges1() {
 
 getOldAges1();
 
-//.......................................................................Class
+// - MARK: Class
 
 class Developer {
     
@@ -416,7 +416,7 @@ esmaeili.yearsExp1 = 3
 
 //print(esmaeili.name2)
 
-//...................................................................Inheritance
+// - MARK: Inheritance
 
 
 class IOSDeveloper: Developer {
@@ -450,7 +450,7 @@ ali3.callFavoriteFramework()
 ali3.callName()
 //print(ali3.callName())
 
-//......................................................................Struct
+// - MARK: Struct
 
 struct Developer3 {
     //memberWise initializer
@@ -469,7 +469,7 @@ joe.name3 = "hasan"
 
 ali4.name3
 
-//..................................................................Extention
+// - MARK: Extention
 
 extension String {
     
@@ -483,7 +483,7 @@ extension String {
 let alphabet = "A B C D"
 print(alphabet.remove1())
 
-//.............................................................FIZZBUZZ
+// - MARK: FIZZBUZZ
 
 // for numbers divisible by 3, print "FIZZ"
 // for numbers divisible by 5, print "BUZZ"
@@ -518,3 +518,33 @@ func RunFizzBuzz() {
 
 RunFizzBuzz()
 
+// - MARK: Filter - Map - Reduce
+
+//Filter
+var array1 = [1, 2, 3, 5, 12 ,100 ,1234, 17, 12]
+
+print("Before: \(array1)")
+
+array1 = array1.filter({ return $0 % 2 == 0})
+//filter if x % 2 == 0 and Return
+print("After: \(array1)")
+
+//Map
+var array2 = [1, 2, 3, 5, 12 ,100 ,1234, 17, 12]
+
+print("Before: \(array2)")
+
+array2 = array2.map({ $0 * 2 })
+//use * 2 for all parts of array (and Return)
+print("After: \(array2)")
+
+//Reduce
+
+var array3 = [1, 2, 3, 5, 12 ,100 ,1234, 17, 12]
+
+print("Before: \(array3)")
+
+
+let result3 = array3.reduce(0, {runningSum, value in runningSum + value})
+//sum all of parts of array (and Return)
+print("After: \(result3)")
