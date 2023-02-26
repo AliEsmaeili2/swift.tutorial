@@ -6,7 +6,7 @@
 ## Chapters ...
 
 
-	[Playground]
+	[Playground1]
 
 
 1- Var (varible)
@@ -42,6 +42,37 @@
 15-2- FIZZBUZZ!
 
 31- Filter, Map, Reduce
+
+---------------------------------------------
+    [Playground2]
+
+L1- Var (int-String-float...)
+
+L2- Var (Convert)
+
+L3- Var (append-uppercased-capitalized-replacingOccurrences-contains...) 
+
+L4- Function
+
+L5- Var (count-removeAll{keepingCapacity: true}-as {Any}-isEmpty...)
+
+L6- For (while-repeat)
+
+L7- Dictionary
+
+L8- Nil
+
+L9-A- Class
+
+L9-B- Class2
+
+L9-C-1- Inheritance
+
+L9-C_2- Inheritance2
+
+L9-D- Deinitializer -> Deinit Function
+
+L10- Custom Class & Func
 
 ---------------------------------------------
 
